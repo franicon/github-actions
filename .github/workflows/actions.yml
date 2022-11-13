@@ -9,7 +9,7 @@ jobs:
       - name: create env file
         run: | 
           touch .env
-          ls
+          pwd
       - name: Simple javascript actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
