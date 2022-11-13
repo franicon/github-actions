@@ -10,6 +10,13 @@ jobs:
         run: | 
           touch .env
           pwd
+      - name: checkout actions
+        uses: actions/checkout@v1
+      - name: create env file
+        run: |
+          touch .env
+          pwd
+          ls
       - name: Simple javascript actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
