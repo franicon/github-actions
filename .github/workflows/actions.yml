@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: create env file
-        run: touch .env
+        run: touch env.txt
       - name: Simple javascript actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
