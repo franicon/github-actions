@@ -14,9 +14,8 @@ jobs:
         uses: actions/checkout@v1
       - name: create env file
         run: |
-          touch .env
           pwd
-          ls
+          ls -a
       - name: Simple javascript actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
